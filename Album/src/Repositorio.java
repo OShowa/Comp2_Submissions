@@ -24,6 +24,7 @@ public class Repositorio<T extends Colecionavel> {
                     Figurinha fig = new Figurinha(i, PREFIXO_URL_IMAGENS + sufixoUrlImagens);
                     todasAsFigurinhas.add((T) fig);
                 }
+                break;
             case("Selo"):
                 for (int i = 1; i <= quantFigurinhas; i++) {
                     Selo fig = new Selo(i, PREFIXO_URL_IMAGENS + sufixoUrlImagens,
@@ -31,6 +32,7 @@ public class Repositorio<T extends Colecionavel> {
 
                     todasAsFigurinhas.add((T) fig);
                 }
+                break;
         }
     }
 
